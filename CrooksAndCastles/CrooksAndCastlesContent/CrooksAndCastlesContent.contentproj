@@ -30,23 +30,23 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharapterBoyDown.png">
-      <Name>CharapterBoyDown</Name>
+    <Compile Include="CharacterBoyDown.png">
+      <Name>CharacterBoyDown</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CharapterBoyLeft.png">
-      <Name>CharapterBoyLeft</Name>
+    <Compile Include="CharacterBoyLeft.png">
+      <Name>CharacterBoyLeft</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CharapterBoyRight.png">
-      <Name>CharapterBoyRight</Name>
+    <Compile Include="CharacterBoyRight.png">
+      <Name>CharacterBoyRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CharapterBoyUp.png">
-      <Name>CharapterBoyUp</Name>
+    <Compile Include="CharacterBoyUp.png">
+      <Name>CharacterBoyUp</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

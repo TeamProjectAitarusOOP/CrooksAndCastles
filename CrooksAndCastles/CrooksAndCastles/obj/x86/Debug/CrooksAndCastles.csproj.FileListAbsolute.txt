@@ -9,10 +9,6 @@ D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\Micro
 D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.exe
 D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
 D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb
-C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyDown.xnb
-C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyLeft.xnb
-C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyRight.xnb
-C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyUp.xnb
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.exe
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.pdb
@@ -20,3 +16,7 @@ C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\obj\x86\De
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.exe
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyDown.xnb
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyLeft.xnb
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyRight.xnb
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb

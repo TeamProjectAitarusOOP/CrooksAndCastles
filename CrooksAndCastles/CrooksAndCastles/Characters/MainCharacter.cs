@@ -13,15 +13,13 @@ namespace CrooksAndCastles.Characters
     {
 
         /////// ANIMATION VARIABLES ///////
-        
-        private Texture2D character; //Character textures
+
         private Rectangle sourceRectangle; //Base Bounderies
         private Vector2 position = new Vector2(0f, 175f); // Start possition
         private float elapsed; //elapse time
         private int currentFrame; // current frame
         private int wigdth;
         private int height;
-        private bool looping; //Looping Animation
         private string asset; // asset
 
         public MainCharacter(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
@@ -51,9 +49,9 @@ namespace CrooksAndCastles.Characters
         {
             this.elapsed += (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             this.sourceRectangle = new Rectangle(currentFrame * this.FrameWidth, 0, this.FrameWidth, this.FrameHeight);
-            if (elapsed >= FrameTime)
+            if (elapsed >= this.FrameTime)
             {
-                if (currentFrame >= NumberOfFrames - 1)
+                if (this.currentFrame >= this.NumberOfFrames - 1)
                 {
                     if (Looping)
                     {
@@ -88,9 +86,9 @@ namespace CrooksAndCastles.Characters
             float x = this.position.X;
             float y = this.position.Y;
             y += 2f;
-            if (y > 410)
+            if (y > CrooksAndCastles.WindowHeight - 50)
             {
-                y = 410;
+                y = CrooksAndCastles.WindowHeight - 50;
             }
             this.position = new Vector2(x, y);
         }
@@ -99,9 +97,9 @@ namespace CrooksAndCastles.Characters
             float x = this.position.X;
             float y = this.position.Y;
             x += 2f;
-            if (x > 750)
+            if (x > CrooksAndCastles.WindowWidth - 50)
             {
-                x = 750;
+                x = CrooksAndCastles.WindowWidth - 50;
             }
             this.position = new Vector2(x, y);
         }

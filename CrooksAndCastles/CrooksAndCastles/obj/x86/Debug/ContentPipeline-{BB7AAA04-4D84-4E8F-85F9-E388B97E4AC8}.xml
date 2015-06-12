@@ -2,42 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>CharapterBoyDown.png</Source>
-      <Name>CharapterBoyDown</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyDown.xnb</Output>
-      <Time>2015-06-12T03:41:48.3095193+03:00</Time>
-    </Item>
-    <Item>
-      <Source>CharapterBoyLeft.png</Source>
-      <Name>CharapterBoyLeft</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyLeft.xnb</Output>
-      <Time>2015-06-12T03:41:48.3095193+03:00</Time>
-    </Item>
-    <Item>
-      <Source>CharapterBoyRight.png</Source>
-      <Name>CharapterBoyRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyRight.xnb</Output>
-      <Time>2015-06-12T03:41:48.3105194+03:00</Time>
-    </Item>
-    <Item>
-      <Source>CharapterBoyUp.png</Source>
-      <Name>CharapterBoyUp</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyUp.xnb</Output>
-      <Time>2015-06-12T03:41:48.3105194+03:00</Time>
-    </Item>
-    <Item>
       <Source>BackgroundIMG.jpg</Source>
       <Name>BackgroundIMG</Name>
       <Importer>TextureImporter</Importer>
@@ -45,6 +9,42 @@
       <Options>None</Options>
       <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb</Output>
       <Time>2015-06-12T03:41:48.3085193+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharacterBoyDown.png</Source>
+      <Name>CharacterBoyDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyDown.xnb</Output>
+      <Time>2015-06-12T03:41:48.3095193+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharacterBoyLeft.png</Source>
+      <Name>CharacterBoyLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyLeft.xnb</Output>
+      <Time>2015-06-12T03:41:48.3095193+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharacterBoyRight.png</Source>
+      <Name>CharacterBoyRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyRight.xnb</Output>
+      <Time>2015-06-12T03:41:48.3105194+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharacterBoyUp.png</Source>
+      <Name>CharacterBoyUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb</Output>
+      <Time>2015-06-12T03:41:48.3105194+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

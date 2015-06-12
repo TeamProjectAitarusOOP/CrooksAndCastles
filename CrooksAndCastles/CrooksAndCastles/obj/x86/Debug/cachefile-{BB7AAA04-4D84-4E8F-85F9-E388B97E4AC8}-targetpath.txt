@@ -1,5 +1,5 @@
-Content\CharapterBoyDown.xnb
-Content\CharapterBoyLeft.xnb
-Content\CharapterBoyRight.xnb
-Content\CharapterBoyUp.xnb
 Content\BackgroundIMG.xnb
+Content\CharacterBoyDown.xnb
+Content\CharacterBoyLeft.xnb
+Content\CharacterBoyRight.xnb
+Content\CharacterBoyUp.xnb
