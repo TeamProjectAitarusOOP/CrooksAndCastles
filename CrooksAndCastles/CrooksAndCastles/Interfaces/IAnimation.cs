@@ -5,7 +5,7 @@ namespace CrooksAndCastles.Interfaces
 {
     public interface IAnimation
     {
-        void playCharapterAnimation(GameTime gameTime);
+        void playCharacterAnimation(GameTime gameTime);
         void ChangeAsset(ContentManager content, string asset, int numberOfFrames);
     }
 }

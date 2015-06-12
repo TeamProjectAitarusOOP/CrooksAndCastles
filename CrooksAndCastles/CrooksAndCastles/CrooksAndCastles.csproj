@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="BackgroundObjects\BackgroundObject.cs" />
     <Compile Include="BackgroundObjects\Objects\Background.cs" />
+    <Compile Include="Characters\Character.cs" />
     <Compile Include="Interfaces\IAnimation.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\IDraw.cs" />
