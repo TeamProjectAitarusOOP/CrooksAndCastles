@@ -9,56 +9,59 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CrooksAndCastles.Characters
 {
-    public class MainCharacter: Character, IMovabble
+    public class MainCharacter : Character, IMovabble
     {
         public MainCharacter(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
             : base(content, asset, frameSpeed, numberOfFrames, looping)
         {
-            
+            this.Position = new Vector2(CrooksAndCastles.WindowWidth / 2, CrooksAndCastles.WindowHeight / 2);
         }
+
+        public override Vector2 Position { get; set; }
+
         public void MoveUp()
         {
-            float x = this.position.X;
-            float y = this.position.Y;
+            float x = this.Position.X;
+            float y = this.Position.Y;
             y -= 2f;
             if (y < CrooksAndCastles.MenuHeight)
             {
                 y = CrooksAndCastles.MenuHeight;
             }
-            this.position = new Vector2(x, y);
+            this.Position = new Vector2(x, y);
         }
         public void MoveDown()
         {
-            float x = this.position.X;
-            float y = this.position.Y;
+            float x = this.Position.X;
+            float y = this.Position.Y;
             y += 2f;
             if (y > CrooksAndCastles.WindowHeight - CrooksAndCastles.MenuHeight)
             {
                 y = CrooksAndCastles.WindowHeight - CrooksAndCastles.MenuHeight;
             }
-            this.position = new Vector2(x, y);
+            this.Position = new Vector2(x, y);
         }
         public void MoveRight()
         {
-            float x = this.position.X;
-            float y = this.position.Y;
+            float x = this.Position.X;
+            float y = this.Position.Y;
             x += 2f;
             if (x > CrooksAndCastles.WindowWidth - CrooksAndCastles.MenuHeight)
             {
                 x = CrooksAndCastles.WindowWidth - CrooksAndCastles.MenuHeight;
             }
-            this.position = new Vector2(x, y);
+            this.Position = new Vector2(x, y);
         }
         public void MoveLeft()
         {
-            float x = this.position.X;
-            float y = this.position.Y;
+            float x = this.Position.X;
+            float y = this.Position.Y;
             x -= 2f;
             if (x < 0)
             {
                 x = 0;
             }
-            this.position = new Vector2(x, y);
+            this.Position = new Vector2(x, y);
         }
     }
 }

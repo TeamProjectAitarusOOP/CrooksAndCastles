@@ -17,7 +17,6 @@ namespace CrooksAndCastles.Characters
         private int wigdth;
         private int height;
         private string asset; // asset
-        public Vector2 position = new Vector2(0f, 175f); // Start possition
 
         public Character(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
         {
@@ -30,6 +29,7 @@ namespace CrooksAndCastles.Characters
         }
 
         ////////// PROPERTIS //////////
+        public abstract Vector2 Position { get; set; }
         public int FrameWidth { get; set; }
         public int FrameHeight { get; set; }
         public float FrameTime { get; set; }
@@ -40,7 +40,7 @@ namespace CrooksAndCastles.Characters
         ///////////// METHODS /////////////
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(this.CharacterTexture, this.position, this.sourceRectangle, Color.White);
+            spriteBatch.Draw(this.CharacterTexture, this.Position, this.sourceRectangle, Color.White);
         }
         public void playCharacterAnimation(GameTime gameTime)
         {

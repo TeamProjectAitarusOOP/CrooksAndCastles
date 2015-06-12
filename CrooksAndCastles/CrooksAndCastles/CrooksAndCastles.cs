@@ -16,23 +16,26 @@ namespace CrooksAndCastles
 {
     public class CrooksAndCastles : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        private MainCharacter player;
+        private SpriteBatch spriteBatch;
         private Background background;
         private KeyboardState keyBoard;
         private bool startingCharacter = true;
         public const int WindowHeight = 576;
         public const int WindowWidth = 1024; 
         public const int MenuHeight = 50;
+        public Enemy enemy;
+        
 
         public CrooksAndCastles()
         {
             Content.RootDirectory = "Content";
-            this.graphics = new GraphicsDeviceManager(this);
-            this.graphics.PreferredBackBufferHeight = WindowHeight;
-            this.graphics.PreferredBackBufferWidth = WindowWidth;
+            Graphics = new GraphicsDeviceManager(this);
+            Graphics.PreferredBackBufferHeight = WindowHeight;
+            Graphics.PreferredBackBufferWidth = WindowWidth;
         }
+
+        public static MainCharacter Hero { get; set; }
+        public static GraphicsDeviceManager Graphics { get; set; }
 
         protected override void Initialize()
         {
@@ -45,8 +48,9 @@ namespace CrooksAndCastles
         protected override void LoadContent()
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice);
-            this.player = new MainCharacter(Content, "CharacterBoyRight", 150f, 4, true);
-            this.background = new Background(Content, "BackgroundIMG", new Rectangle(0, MenuHeight, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight));
+            Hero = new MainCharacter(Content, "CharacterBoyRight", 150f, 4, true);
+            this.background = new Background(Content, "BackgroundIMG", new Rectangle(0, MenuHeight, Graphics.PreferredBackBufferWidth, Graphics.PreferredBackBufferHeight));
+            enemy = new Enemy(Content, "CharacterBoyRight", 150f, 4, true, 20, 40);
         }
         protected override void UnloadContent()
         {
@@ -56,11 +60,13 @@ namespace CrooksAndCastles
         {
             //CONTROLS MAIN CHARAPTER//
             this.keyBoard = Keyboard.GetState();
+            enemy.playCharacterAnimation(gameTime);
+            enemy.Awareness();
             MovePlayer(gameTime);
             if (this.startingCharacter == true)
             {
-                this.player.ChangeAsset(Content, "CharacterBoyRight", 1);
-                this.player.playCharacterAnimation(gameTime);
+                Hero.ChangeAsset(Content, "CharacterBoyRight", 1);
+                Hero.playCharacterAnimation(gameTime);
             }
 
             base.Update(gameTime);
@@ -70,7 +76,8 @@ namespace CrooksAndCastles
             GraphicsDevice.Clear(Color.GreenYellow);
             this.spriteBatch.Begin();
             this.background.Draw(spriteBatch);
-            this.player.Draw(spriteBatch);
+            Hero.Draw(spriteBatch);
+            enemy.Draw(spriteBatch);
             this.spriteBatch.End();
 
             base.Draw(gameTime);
@@ -81,30 +88,30 @@ namespace CrooksAndCastles
         {
             if (keyBoard.IsKeyDown(Keys.Up))
             {
-                this.player.MoveUp();
-                this.player.ChangeAsset(Content, "CharacterBoyUp", 4);
-                this.player.playCharacterAnimation(gameTime);
+                Hero.MoveUp();
+                Hero.ChangeAsset(Content, "CharacterBoyUp", 4);
+                Hero.playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
             else if (keyBoard.IsKeyDown(Keys.Right))
             {
-                this.player.MoveRight();
-                this.player.ChangeAsset(Content, "CharacterBoyRight", 4);
-                this.player.playCharacterAnimation(gameTime);
+                Hero.MoveRight();
+                Hero.ChangeAsset(Content, "CharacterBoyRight", 4);
+                Hero.playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
             else if (keyBoard.IsKeyDown(Keys.Down))
             {
-                this.player.MoveDown();
-                this.player.ChangeAsset(Content, "CharacterBoyDown", 4);
-                this.player.playCharacterAnimation(gameTime);
+                Hero.MoveDown();
+                Hero.ChangeAsset(Content, "CharacterBoyDown", 4);
+                Hero.playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
             else if (keyBoard.IsKeyDown(Keys.Left))
             {
-                this.player.MoveLeft();
-                this.player.ChangeAsset(Content, "CharacterBoyLeft", 4);
-                this.player.playCharacterAnimation(gameTime);
+                Hero.MoveLeft();
+                Hero.ChangeAsset(Content, "CharacterBoyLeft", 4);
+                Hero.playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
         }
