@@ -16,26 +16,28 @@ namespace CrooksAndCastles
 {
     public class CrooksAndCastles : Microsoft.Xna.Framework.Game
     {
+        private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         private Background background;
         private KeyboardState keyBoard;
+        private List<Character> units = new List<Character>();
+        //private Vector2 enemyPosition;
         private bool startingCharacter = true;
+        private const float SpawnDistanceBetweenUnits = Enemy.EnemyChaseDistance + 10;
         public const int WindowHeight = 576;
         public const int WindowWidth = 1024; 
         public const int MenuHeight = 50;
-        public Enemy enemy;
         
 
         public CrooksAndCastles()
         {
             Content.RootDirectory = "Content";
-            Graphics = new GraphicsDeviceManager(this);
-            Graphics.PreferredBackBufferHeight = WindowHeight;
-            Graphics.PreferredBackBufferWidth = WindowWidth;
+            this.graphics = new GraphicsDeviceManager(this);
+            this.graphics.PreferredBackBufferHeight = WindowHeight;
+            this.graphics.PreferredBackBufferWidth = WindowWidth;
         }
 
         public static MainCharacter Hero { get; set; }
-        public static GraphicsDeviceManager Graphics { get; set; }
 
         protected override void Initialize()
         {
@@ -48,27 +50,39 @@ namespace CrooksAndCastles
         protected override void LoadContent()
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice);
-            Hero = new MainCharacter(Content, "CharacterBoyRight", 150f, 4, true);
-            this.background = new Background(Content, "BackgroundIMG", new Rectangle(0, MenuHeight, Graphics.PreferredBackBufferWidth, Graphics.PreferredBackBufferHeight));
-            enemy = new Enemy(Content, "CharacterBoyRight", 150f, 4, true, 20, 40);
+            Hero = new MainCharacter(Content, "CharacterBoyRight", 150f, 4, true, 1);
+            units.Add(Hero);
+            this.background = new Background(Content, "BackgroundIMG", new Rectangle(0, MenuHeight, this.graphics.PreferredBackBufferWidth, this.graphics.PreferredBackBufferHeight));
+            //while (this.units.Count < 6)
+            //{
+            //    units.Add(new Enemy(Content, "EnemyOneRight", 150f, 4, true, RandomCoordinates()));
+            //}
+            //units.Add(new Enemy(Content, "EnemyOneRight", 150f, 4, true, RandomCoordinates()));
+            //units.Add(new Enemy(Content, "EnemyOneRight", 150f, 4, true, RandomCoordinates()));
+            units.Add(new Enemy(Content, "EnemyOneRight", 150f, 4, true, RandomCoordinates(), Hero.Level));
         }
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+
         }
         protected override void Update(GameTime gameTime)
         {
-            //CONTROLS MAIN CHARAPTER//
             this.keyBoard = Keyboard.GetState();
-            enemy.playCharacterAnimation(gameTime);
-            enemy.Awareness();
+            foreach (var unit in this.units)
+            {
+                if (unit is Enemy)
+                {
+                    Enemy enemy = unit as Enemy;
+                    enemy.playCharacterAnimation(gameTime);
+                    enemy.Awareness();
+                }
+            }
             MovePlayer(gameTime);
             if (this.startingCharacter == true)
             {
                 Hero.ChangeAsset(Content, "CharacterBoyRight", 1);
                 Hero.playCharacterAnimation(gameTime);
             }
-
             base.Update(gameTime);
         }
         protected override void Draw(GameTime gameTime)
@@ -77,9 +91,19 @@ namespace CrooksAndCastles
             this.spriteBatch.Begin();
             this.background.Draw(spriteBatch);
             Hero.Draw(spriteBatch);
-            enemy.Draw(spriteBatch);
+            for (int index = 1; index < units.Count; index++)
+            {
+                units[index].Draw(this.spriteBatch);
+            }
+            //foreach (var unit in this.units)
+            //{
+            //    if (unit is Enemy)
+            //    {
+            //        Enemy enemy = unit as Enemy;
+            //        enemy.Draw(spriteBatch);
+            //    }
+            //}
             this.spriteBatch.End();
-
             base.Draw(gameTime);
         }
 
@@ -115,6 +139,29 @@ namespace CrooksAndCastles
                 this.startingCharacter = false;
             }
         }
+        
+        //private void SpawnEnemy()
+        //{
+        //    Vector2 enemyPosition = RandomCoordinates();
+        //    foreach (var unit in this.units)
+        //    {
+        //        if (((unit.Position.X - enemyPosition.X) * (unit.Position.X - enemyPosition.X) +
+        //            (unit.Position.Y - enemyPosition.Y) * (unit.Position.Y - enemyPosition.Y)) <
+        //            (SpawnDistanceBetweenUnits + 10) * (SpawnDistanceBetweenUnits + 10))
+        //        {
+        //            enemyPosition = RandomCoordinates();
+        //        }
+        //    }
 
+        //    units.Add(new Enemy(Content, "EnemyOneRight", 150f, 4, true, enemyPosition));
+        //}
+
+        private Vector2 RandomCoordinates()
+        {
+            Random rand = new Random();
+            float randomX = rand.Next(0, WindowWidth - MenuHeight);
+            float randomY = rand.Next(MenuHeight, WindowHeight - MenuHeight);
+            return new Vector2(randomX, randomY);
+        }
     }
 }

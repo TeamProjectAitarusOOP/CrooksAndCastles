@@ -46,6 +46,24 @@
       <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb</Output>
       <Time>2015-06-12T03:41:48.3105194+03:00</Time>
     </Item>
+    <Item>
+      <Source>EnemyOneLeft.png</Source>
+      <Name>EnemyOneLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb</Output>
+      <Time>2015-06-12T23:23:16.9675791+03:00</Time>
+    </Item>
+    <Item>
+      <Source>EnemyOneRight.png</Source>
+      <Name>EnemyOneRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb</Output>
+      <Time>2015-06-12T23:23:16.9695792+03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{BB7AAA04-4D84-4E8F-85F9-E388B97E4AC8}</ContentProjectGUID>

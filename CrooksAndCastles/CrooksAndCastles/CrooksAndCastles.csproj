@@ -76,8 +76,8 @@
     <Compile Include="BackgroundObjects\Objects\Background.cs" />
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Enemy.cs" />
-    <Compile Include="Characters\sdfgfsdg.cs" />
     <Compile Include="Characters\AI\EnemyState.cs" />
+    <Compile Include="Characters\Skills.cs" />
     <Compile Include="Interfaces\IAnimation.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\IDraw.cs" />

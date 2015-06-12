@@ -19,49 +19,31 @@ namespace CrooksAndCastles.Characters
         private Vector2 EnemyTextureCenter;
         private EnemyState enemyState = EnemyState.Chill;
         private float enemyOrientation;
-        private Vector2 enemyWanderDirection;
         public const float EnemyHitDistance = 10.0f;
         public const float EnemyChaseDistance = 100.0f;
         public const float EnemyTurnSpeed = 2.0f;
         public const float MaxEnemySpeed = 0.7f;
-        public const float enemyHysteresis = 15.0f;
 
-        public Enemy(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping, float x, float y)
-            : base(content, asset, frameSpeed, numberOfFrames, looping)
+        public Enemy(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping, Vector2 position, int level)
+            : base(content, asset, frameSpeed, numberOfFrames, looping, level)
         {
-            this.Position = new Vector2(x, y);
-            this.startPositionX = x;
-            this.startPositionY = y;
+            this.Position = position;
+            this.startPositionX = position.X;
+            this.startPositionY = position.Y;
         }
 
         public override Vector2 Position { get; set; }
 
         public void Awareness()
         {
-            float enemyChaseTreshold = EnemyChaseDistance;
-            float enemyHitDistance = EnemyHitDistance;
             float distanceFromMainCharacter = Vector2.Distance(this.Position, CrooksAndCastles.Hero.Position);
 
-            if (this.enemyState == EnemyState.Chill)
-            {
-                enemyChaseTreshold += enemyHysteresis / 2;
-                enemyHitDistance -= enemyHysteresis / 2;
-            }
-            else if (enemyState == EnemyState.Chasing)
-            {              
-                enemyChaseTreshold -= enemyHysteresis / 2;
-            }
-            else if (this.enemyState == EnemyState.Caught)
-            {
-                enemyChaseTreshold += enemyHysteresis / 2;
-            }
-
             //Changing states according to distance between enemy and hero
-            if (distanceFromMainCharacter < enemyChaseTreshold)
+            if (distanceFromMainCharacter < EnemyChaseDistance)
             {
                 this.enemyState = EnemyState.Chasing;
             }
-            else if (distanceFromMainCharacter < enemyHitDistance)
+            else if (distanceFromMainCharacter < EnemyHitDistance)
             {
                 this.enemyState = EnemyState.Caught;
             }
@@ -73,15 +55,37 @@ namespace CrooksAndCastles.Characters
             float currentEnemySpeed;
             if (this.enemyState == EnemyState.Chasing)
             {
-                enemyOrientation = TurnToFace(this.Position, CrooksAndCastles.Hero.Position, enemyOrientation, EnemyTurnSpeed);
+                if (CrooksAndCastles.Hero.Position.X > this.startPositionX)
+                {
+                    this.ChangeAsset(this.Content, "EnemyOneRight", 4);
+                }
+                else
+                {
+                    this.ChangeAsset(this.Content, "EnemyOneLeft", 4);
+                }
                 currentEnemySpeed = MaxEnemySpeed;
+                enemyOrientation = TurnToFace(this.Position, CrooksAndCastles.Hero.Position, enemyOrientation, EnemyTurnSpeed);
             }
             else if (this.enemyState == EnemyState.Chill)
             {
-                LookingForHero(this.Position, ref enemyWanderDirection, ref enemyOrientation, EnemyTurnSpeed);
-                currentEnemySpeed = MaxEnemySpeed / 4.0f;
-                this.Position = new Vector2(startPositionX, startPositionY);
-                
+
+                currentEnemySpeed = MaxEnemySpeed;
+                enemyOrientation = TurnToFace(this.Position, new Vector2(this.startPositionX, this.startPositionY), enemyOrientation, EnemyTurnSpeed);
+                if (CrooksAndCastles.Hero.Position.X > this.startPositionX)
+                {
+                    this.ChangeAsset(this.Content, "EnemyOneLeft", 4);
+                }
+                else
+                {
+                    this.ChangeAsset(this.Content, "EnemyOneRight", 4);
+                }
+                if (((this.startPositionX - this.Position.X) * (this.startPositionX - this.Position.X) +
+                    (this.startPositionY - this.Position.Y) * (this.startPositionY - this.Position.Y)) <=
+                    0.2 * 0.2)
+                {
+                    this.ChangeAsset(this.Content, "EnemyOneRight", 1);
+                    currentEnemySpeed = 0;
+                }
             }
             else
             {
@@ -113,28 +117,6 @@ namespace CrooksAndCastles.Characters
                 radians -= MathHelper.TwoPi;
             }
             return radians;
-        }
-
-        private void LookingForHero(Vector2 position, ref Vector2 wanderDirection, ref float orientation, float turnSpeed)
-        {
-            Random rand = new Random();
-            wanderDirection.X += MathHelper.Lerp(-.25f, .25f, (float)rand.NextDouble());
-            wanderDirection.Y += MathHelper.Lerp(-.25f, .25f, (float)rand.NextDouble());
-            if (wanderDirection != Vector2.Zero)
-            {
-                wanderDirection.Normalize();
-            }
-            orientation = TurnToFace(position, position + wanderDirection, orientation, .15f * turnSpeed);
-
-            Vector2 screenCenter = Vector2.Zero;
-            screenCenter.X = CrooksAndCastles.Graphics.GraphicsDevice.Viewport.Width / 2;
-            screenCenter.Y = CrooksAndCastles.Graphics.GraphicsDevice.Viewport.Height / 2;
-
-            float distanceFromScreenCenter = Vector2.Distance(screenCenter, position);
-            float MaxDistanceFromScreenCenter = Math.Min(screenCenter.Y, screenCenter.X);
-            float normalizedDistance = distanceFromScreenCenter / MaxDistanceFromScreenCenter;
-            float turnToCenterSpeed = .3f * normalizedDistance * normalizedDistance * turnSpeed;
-            orientation = TurnToFace(position, screenCenter, orientation, turnToCenterSpeed);
         }
     }
 }

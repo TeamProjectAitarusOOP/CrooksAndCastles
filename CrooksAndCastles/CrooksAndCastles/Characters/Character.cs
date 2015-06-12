@@ -14,28 +14,34 @@ namespace CrooksAndCastles.Characters
         private Rectangle sourceRectangle; //Base Bounderies
         private float elapsed; //elapse time
         private int currentFrame; // current frame
-        private int wigdth;
-        private int height;
-        private string asset; // asset
+        private int health;
+        private int damage;
 
-        public Character(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
+        public Character(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping, int level)
         {
+            this.Content = content;
             this.FrameTime = frameSpeed; // frame speed
             this.NumberOfFrames = numberOfFrames; // numbers of frames in sprite animation
             this.Looping = looping; //loopin bool
             this.CharacterTexture = content.Load<Texture2D>(asset); // load texture
             this.FrameWidth = (CharacterTexture.Width / this.NumberOfFrames); // calculate frame in asset
             this.FrameHeight = (CharacterTexture.Height); // frame hight base on charapter hight
+            this.Level = level;
+            this.health = this.Level * 100;
+            this.damage = this.Level * 30;
         }
 
         ////////// PROPERTIS //////////
         public abstract Vector2 Position { get; set; }
+        public int Level { get; set; }
+        public int Health { get; set; }
         public int FrameWidth { get; set; }
         public int FrameHeight { get; set; }
         public float FrameTime { get; set; }
         public int NumberOfFrames { get; set; }
         public bool Looping { get; set; }
         public Texture2D CharacterTexture { get; set; }
+        public ContentManager Content { get; set; }
 
         ///////////// METHODS /////////////
         public void Draw(SpriteBatch spriteBatch)
@@ -67,5 +73,7 @@ namespace CrooksAndCastles.Characters
             this.CharacterTexture = content.Load<Texture2D>(asset);
             this.NumberOfFrames = numberOfFrames;
         }
+
+        //protected abstract void Attack(Character unit);
     }
 }

@@ -11,8 +11,8 @@ namespace CrooksAndCastles.Characters
 {
     public class MainCharacter : Character, IMovabble
     {
-        public MainCharacter(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
-            : base(content, asset, frameSpeed, numberOfFrames, looping)
+        public MainCharacter(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping, int level)
+            : base(content, asset, frameSpeed, numberOfFrames, looping, level)
         {
             this.Position = new Vector2(CrooksAndCastles.WindowWidth / 2, CrooksAndCastles.WindowHeight / 2);
         }
@@ -63,5 +63,10 @@ namespace CrooksAndCastles.Characters
             }
             this.Position = new Vector2(x, y);
         }
+
+        //protected override void Attack(Character unit)
+        //{
+            
+        //}
     }
 }

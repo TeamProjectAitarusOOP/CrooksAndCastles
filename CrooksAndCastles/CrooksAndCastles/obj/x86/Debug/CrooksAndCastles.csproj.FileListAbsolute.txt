@@ -20,3 +20,5 @@ C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\De
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyLeft.xnb
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyRight.xnb
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb
