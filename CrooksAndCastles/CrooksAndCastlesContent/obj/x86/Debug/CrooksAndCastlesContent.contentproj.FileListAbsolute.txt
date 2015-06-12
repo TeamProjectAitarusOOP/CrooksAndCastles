@@ -1,1 +1,2 @@
 D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastlesContent\obj\x86\Debug\CrooksAndCastlesContent.contentprojResolveAssemblyReference.cache
+C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastlesContent\obj\x86\Debug\CrooksAndCastlesContent.contentprojResolveAssemblyReference.cache

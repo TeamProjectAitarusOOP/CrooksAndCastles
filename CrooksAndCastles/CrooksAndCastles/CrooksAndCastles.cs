@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CrooksAndCastles.AnimatedCharapters;
+using CrooksAndCastles.Characters;
 using CrooksAndCastles.BackgroundObjects.Objects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -18,7 +18,7 @@ namespace CrooksAndCastles
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        private MainCharapter player;
+        private MainCharacter player;
         private Background background;
         private KeyboardState keyBoard;
         private bool startingCharapter = true;
@@ -27,6 +27,8 @@ namespace CrooksAndCastles
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferHeight = 768;
+            graphics.PreferredBackBufferWidth = 1024;
         }
 
         protected override void Initialize()
@@ -34,12 +36,13 @@ namespace CrooksAndCastles
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            this.IsMouseVisible = true;
         }
 
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            player = new MainCharapter(Content, "CharapterBoyRight", 150f, 4, true);
+            player = new MainCharacter(Content, "CharapterBoyRight", 150f, 4, true);
             background = new Background(Content, "BackgroundIMG", new Rectangle(0, 50, graphics.PreferredBackBufferWidth, graphics.PreferredBackBufferHeight));
         }
         protected override void UnloadContent()

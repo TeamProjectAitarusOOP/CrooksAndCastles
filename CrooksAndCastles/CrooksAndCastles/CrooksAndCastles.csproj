@@ -78,7 +78,7 @@
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\IDraw.cs" />
     <Compile Include="Interfaces\IMovabble.cs" />
-    <Compile Include="MainCharapter\MainCharapter.cs" />
+    <Compile Include="Characters\MainCharacter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameMain.cs" />
     <Compile Include="CrooksAndCastles.cs" />
