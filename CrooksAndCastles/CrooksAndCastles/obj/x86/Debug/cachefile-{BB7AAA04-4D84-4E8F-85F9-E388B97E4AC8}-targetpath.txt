@@ -1,0 +1,5 @@
+Content\CharapterBoyDown.xnb
+Content\CharapterBoyLeft.xnb
+Content\CharapterBoyRight.xnb
+Content\CharapterBoyUp.xnb
+Content\BackgroundIMG.xnb

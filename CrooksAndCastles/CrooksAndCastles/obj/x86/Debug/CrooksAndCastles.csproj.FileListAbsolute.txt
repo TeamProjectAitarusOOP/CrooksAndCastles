@@ -1,0 +1,11 @@
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyDown.xnb
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyLeft.xnb
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyRight.xnb
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyUp.xnb
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.exe
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.pdb
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.csprojResolveAssemblyReference.cache
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.exe
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
+D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb

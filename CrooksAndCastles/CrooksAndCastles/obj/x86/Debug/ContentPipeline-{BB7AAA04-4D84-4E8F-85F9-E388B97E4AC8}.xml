@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>CharapterBoyDown.png</Source>
+      <Name>CharapterBoyDown</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyDown.xnb</Output>
+      <Time>2015-06-12T01:06:42.3875528+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharapterBoyLeft.png</Source>
+      <Name>CharapterBoyLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyLeft.xnb</Output>
+      <Time>2015-06-12T01:06:42.391555+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharapterBoyRight.png</Source>
+      <Name>CharapterBoyRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyRight.xnb</Output>
+      <Time>2015-06-12T01:06:42.3965532+03:00</Time>
+    </Item>
+    <Item>
+      <Source>CharapterBoyUp.png</Source>
+      <Name>CharapterBoyUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharapterBoyUp.xnb</Output>
+      <Time>2015-06-12T01:06:42.430554+03:00</Time>
+    </Item>
+    <Item>
+      <Source>BackgroundIMG.jpg</Source>
+      <Name>BackgroundIMG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb</Output>
+      <Time>2015-06-12T01:29:53.2956506+03:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{BB7AAA04-4D84-4E8F-85F9-E388B97E4AC8}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastlesContent\</RootDirectory>
+      <LoggerRootDirectory>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\GitHub\CrooksAndCastles\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+03:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2015-06-11T01:34:58.2995812+03:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>
