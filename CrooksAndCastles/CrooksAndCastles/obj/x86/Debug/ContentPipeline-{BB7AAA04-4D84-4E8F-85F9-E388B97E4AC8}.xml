@@ -2,22 +2,13 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>BackgroundIMG.jpg</Source>
-      <Name>BackgroundIMG</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb</Output>
-      <Time>2015-06-12T03:41:48.3085193+03:00</Time>
-    </Item>
-    <Item>
       <Source>CharacterBoyDown.png</Source>
       <Name>CharacterBoyDown</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyDown.xnb</Output>
-      <Time>2015-06-12T03:41:48.3095193+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyDown.xnb</Output>
+      <Time>2015-06-14T16:12:30.3025086+03:00</Time>
     </Item>
     <Item>
       <Source>CharacterBoyLeft.png</Source>
@@ -25,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyLeft.xnb</Output>
-      <Time>2015-06-12T03:41:48.3095193+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyLeft.xnb</Output>
+      <Time>2015-06-14T16:12:30.3338012+03:00</Time>
     </Item>
     <Item>
       <Source>CharacterBoyRight.png</Source>
@@ -34,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyRight.xnb</Output>
-      <Time>2015-06-12T03:41:48.3105194+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyRight.xnb</Output>
+      <Time>2015-06-14T16:12:30.3494008+03:00</Time>
     </Item>
     <Item>
       <Source>CharacterBoyUp.png</Source>
@@ -43,8 +34,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb</Output>
-      <Time>2015-06-12T03:41:48.3105194+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb</Output>
+      <Time>2015-06-14T16:12:30.4900087+03:00</Time>
+    </Item>
+    <Item>
+      <Source>BackgroundIMG.jpg</Source>
+      <Name>BackgroundIMG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb</Output>
+      <Time>2015-06-14T16:12:30.4743827+03:00</Time>
     </Item>
     <Item>
       <Source>EnemyOneLeft.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb</Output>
-      <Time>2015-06-12T23:23:16.9675791+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb</Output>
+      <Time>2015-06-14T17:11:15.2312655+03:00</Time>
     </Item>
     <Item>
       <Source>EnemyOneRight.png</Source>
@@ -61,8 +61,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb</Output>
-      <Time>2015-06-12T23:23:16.9695792+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb</Output>
+      <Time>2015-06-14T17:11:15.2468118+03:00</Time>
+    </Item>
+    <Item>
+      <Source>EnemyOneHit.png</Source>
+      <Name>EnemyOneHit</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHit.xnb</Output>
+      <Time>2015-06-14T17:18:54.4692055+03:00</Time>
+    </Item>
+    <Item>
+      <Source>GameOver.png</Source>
+      <Name>GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb</Output>
+      <Time>2015-06-14T17:35:46.6962602+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -71,10 +89,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastlesContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastlesContent\</RootDirectory>
+      <LoggerRootDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -103,7 +121,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-06-11T21:15:39.579767+03:00</Value>
+        <Value>2015-06-11T01:34:58.2995812+03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

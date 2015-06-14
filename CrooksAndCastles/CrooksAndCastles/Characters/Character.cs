@@ -11,13 +11,12 @@ namespace CrooksAndCastles.Characters
 {
     public abstract class Character : IDraw, IAnimation
     {
+        ////////// FIELDS //////////
         private Rectangle sourceRectangle; //Base Bounderies
         private float elapsed; //elapse time
         private int currentFrame; // current frame
-        private int health;
-        private int damage;
 
-        public Character(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping, int level)
+        public Character(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
         {
             this.Content = content;
             this.FrameTime = frameSpeed; // frame speed
@@ -25,16 +24,11 @@ namespace CrooksAndCastles.Characters
             this.Looping = looping; //loopin bool
             this.CharacterTexture = content.Load<Texture2D>(asset); // load texture
             this.FrameWidth = (CharacterTexture.Width / this.NumberOfFrames); // calculate frame in asset
-            this.FrameHeight = (CharacterTexture.Height); // frame hight base on charapter hight
-            this.Level = level;
-            this.health = this.Level * 100;
-            this.damage = this.Level * 30;
+            this.FrameHeight = (CharacterTexture.Height); // frame hight base on charapter hight        
         }
 
         ////////// PROPERTIS //////////
         public abstract Vector2 Position { get; set; }
-        public int Level { get; set; }
-        public int Health { get; set; }
         public int FrameWidth { get; set; }
         public int FrameHeight { get; set; }
         public float FrameTime { get; set; }
@@ -44,7 +38,7 @@ namespace CrooksAndCastles.Characters
         public ContentManager Content { get; set; }
 
         ///////////// METHODS /////////////
-        public void Draw(SpriteBatch spriteBatch)
+        public virtual void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(this.CharacterTexture, this.Position, this.sourceRectangle, Color.White);
         }
@@ -73,7 +67,5 @@ namespace CrooksAndCastles.Characters
             this.CharacterTexture = content.Load<Texture2D>(asset);
             this.NumberOfFrames = numberOfFrames;
         }
-
-        //protected abstract void Attack(Character unit);
     }
 }

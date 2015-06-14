@@ -22,3 +22,18 @@ C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\De
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb
 C:\Users\PsychoSphere\Desktop\oop\2\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyDown.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyLeft.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyRight.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\CharacterBoyUp.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.exe
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.pdb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.csprojResolveAssemblyReference.cache
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.exe
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHit.xnb
+D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb

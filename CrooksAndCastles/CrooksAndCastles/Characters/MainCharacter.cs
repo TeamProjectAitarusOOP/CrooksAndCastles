@@ -9,64 +9,92 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace CrooksAndCastles.Characters
 {
-    public class MainCharacter : Character, IMovabble
+    public class MainCharacter : Character, IMovabble,IAttack
     {
-        public MainCharacter(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping, int level)
-            : base(content, asset, frameSpeed, numberOfFrames, looping, level)
+        public MainCharacter(ContentManager content, string asset, float frameSpeed, int numberOfFrames, bool looping)
+            : base(content, asset, frameSpeed, numberOfFrames, looping)
         {
             this.Position = new Vector2(CrooksAndCastles.WindowWidth / 2, CrooksAndCastles.WindowHeight / 2);
+            this.Health = 1000;
+            this.Damage = 30;
+            this.IsAlive = true;
         }
-
+        
+        ////////// PROPERTIS //////////
         public override Vector2 Position { get; set; }
-
+        public int Health { get; set; }
+        public int Damage { get; set; }
+        public bool IsAlive { get; set; }
+       
+        ///////////// METHODS /////////////
         public void MoveUp()
         {
-            float x = this.Position.X;
-            float y = this.Position.Y;
-            y -= 2f;
-            if (y < CrooksAndCastles.MenuHeight)
+            if (IsAlive)
             {
-                y = CrooksAndCastles.MenuHeight;
+                float x = this.Position.X;
+                float y = this.Position.Y;
+                y -= 2f;
+                if (y < CrooksAndCastles.MenuHeight)
+                {
+                    y = CrooksAndCastles.MenuHeight;
+                }
+                this.Position = new Vector2(x, y);
             }
-            this.Position = new Vector2(x, y);
         }
         public void MoveDown()
         {
-            float x = this.Position.X;
-            float y = this.Position.Y;
-            y += 2f;
-            if (y > CrooksAndCastles.WindowHeight - CrooksAndCastles.MenuHeight)
+            if (IsAlive)
             {
-                y = CrooksAndCastles.WindowHeight - CrooksAndCastles.MenuHeight;
+                float x = this.Position.X;
+                float y = this.Position.Y;
+                y += 2f;
+                if (y > CrooksAndCastles.WindowHeight - CrooksAndCastles.MenuHeight)
+                {
+                    y = CrooksAndCastles.WindowHeight - CrooksAndCastles.MenuHeight;
+                }
+                this.Position = new Vector2(x, y);
             }
-            this.Position = new Vector2(x, y);
         }
         public void MoveRight()
         {
-            float x = this.Position.X;
-            float y = this.Position.Y;
-            x += 2f;
-            if (x > CrooksAndCastles.WindowWidth - CrooksAndCastles.MenuHeight)
+            if (IsAlive)
             {
-                x = CrooksAndCastles.WindowWidth - CrooksAndCastles.MenuHeight;
+                float x = this.Position.X;
+                float y = this.Position.Y;
+                x += 2f;
+                if (x > CrooksAndCastles.WindowWidth - CrooksAndCastles.MenuHeight)
+                {
+                    x = CrooksAndCastles.WindowWidth - CrooksAndCastles.MenuHeight;
+                }
+                this.Position = new Vector2(x, y);
             }
-            this.Position = new Vector2(x, y);
         }
         public void MoveLeft()
         {
-            float x = this.Position.X;
-            float y = this.Position.Y;
-            x -= 2f;
-            if (x < 0)
+            if (IsAlive)
             {
-                x = 0;
+                float x = this.Position.X;
+                float y = this.Position.Y;
+                x -= 2f;
+                if (x < 0)
+                {
+                    x = 0;
+                }
+                this.Position = new Vector2(x, y);  
             }
-            this.Position = new Vector2(x, y);
         }
 
-        //protected override void Attack(Character unit)
-        //{
-            
-        //}
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            if (IsAlive)
+            {
+                base.Draw(spriteBatch);
+            }
+        }
+
+        public void Attack(Character unit)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -13,10 +13,5 @@ namespace CrooksAndCastles.BackgroundObjects.Objects
         public Background(ContentManager content, string asset, Rectangle baseRectangle) : base(content, asset, baseRectangle)
         {
         }
-
-        public override void Draw(SpriteBatch spriteBatch)
-        {
-            spriteBatch.Draw(this.Object, this.BaseRectangle, Color.White);
-        }
     }
 }

@@ -11,9 +11,6 @@ namespace CrooksAndCastles.BackgroundObjects
 {
     abstract class BackgroundObject:IDraw
     {
-        private Texture2D objectTexture;
-        private Rectangle baseRectangle;
-
         public BackgroundObject(ContentManager content, string asset, Rectangle baseRectangle)
         {
             this.Object = content.Load<Texture2D>(asset);
@@ -22,6 +19,10 @@ namespace CrooksAndCastles.BackgroundObjects
 
         public Texture2D Object { get; set; }
         public Rectangle BaseRectangle { get; set; }
-        public abstract void Draw(SpriteBatch spriteBatch);
+
+        public virtual void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(this.Object, this.BaseRectangle, Color.White);
+        }
     }
 }

@@ -4,6 +4,8 @@ namespace CrooksAndCastles.Interfaces
 {
     public interface IAttack
     {
-        void Attack(Character unit);
+        int Health { get; set; }
+        int Damage { get; set; }
+        bool IsAlive { get; set; }
     }
 }

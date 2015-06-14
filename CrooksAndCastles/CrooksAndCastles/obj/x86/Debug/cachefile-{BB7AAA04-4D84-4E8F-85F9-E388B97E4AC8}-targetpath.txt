@@ -1,7 +1,9 @@
-Content\BackgroundIMG.xnb
 Content\CharacterBoyDown.xnb
 Content\CharacterBoyLeft.xnb
 Content\CharacterBoyRight.xnb
 Content\CharacterBoyUp.xnb
+Content\BackgroundIMG.xnb
 Content\EnemyOneLeft.xnb
 Content\EnemyOneRight.xnb
+Content\EnemyOneHit.xnb
+Content\GameOver.xnb

@@ -66,6 +66,8 @@
     <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
     <Reference Include="mscorlib" />
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,7 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackgroundObjects\BackgroundObject.cs" />
+    <Compile Include="BackgroundObjects\HealthBar\HealthBar.cs" />
     <Compile Include="BackgroundObjects\Objects\Background.cs" />
+    <Compile Include="BackgroundObjects\Objects\GameOver.cs" />
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Enemy.cs" />
     <Compile Include="Characters\AI\EnemyState.cs" />
