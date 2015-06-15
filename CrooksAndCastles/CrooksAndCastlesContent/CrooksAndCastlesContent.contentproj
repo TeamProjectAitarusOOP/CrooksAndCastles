@@ -30,23 +30,23 @@
     <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterBoyDown.png">
-      <Name>CharacterBoyDown</Name>
+    <Compile Include="HeroMoveDown.png">
+      <Name>HeroMoveDown</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CharacterBoyLeft.png">
-      <Name>CharacterBoyLeft</Name>
+    <Compile Include="HeroMoveLeft.png">
+      <Name>HeroMoveLeft</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CharacterBoyRight.png">
-      <Name>CharacterBoyRight</Name>
+    <Compile Include="HeroMoveRight.png">
+      <Name>HeroMoveRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="CharacterBoyUp.png">
-      <Name>CharacterBoyUp</Name>
+    <Compile Include="HeroMoveUp.png">
+      <Name>HeroMoveUp</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -54,6 +54,20 @@
   <ItemGroup>
     <Compile Include="BackgroundIMG.jpg">
       <Name>BackgroundIMG</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameOver.png">
+      <Name>GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnemyOneHitLeft.png">
+      <Name>EnemyOneHitLeft</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -69,17 +83,22 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="EnemyOneHit.png">
-      <Name>EnemyOneHit</Name>
+    <Compile Include="EnemyOneHitRight.png">
+      <Name>EnemyOneHitRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameOver.png">
-      <Name>GameOver</Name>
+    <Compile Include="HeroHitLeft.png">
+      <Name>HeroHitLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HeroHitRight.png">
+      <Name>HeroHitRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>

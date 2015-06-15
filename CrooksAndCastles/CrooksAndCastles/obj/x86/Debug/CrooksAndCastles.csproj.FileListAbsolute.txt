@@ -37,3 +37,39 @@ D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\D
 D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
 D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHit.xnb
 D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.exe
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.pdb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.csprojResolveAssemblyReference.cache
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.exe
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.exe
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\CrooksAndCastles.pdb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.csprojResolveAssemblyReference.cache
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.exe
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\CrooksAndCastles.pdb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitLeft.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitRight.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveDown.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveLeft.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveRight.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveUp.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitLeft.xnb
+C:\Users\PsychoSphere\Desktop\rmp\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitRight.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveDown.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveLeft.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveRight.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveUp.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitLeft.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitRight.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitRight.xnb
+D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitLeft.xnb

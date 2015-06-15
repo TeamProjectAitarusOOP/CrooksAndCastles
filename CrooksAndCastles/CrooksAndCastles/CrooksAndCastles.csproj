@@ -83,7 +83,7 @@
     <Compile Include="Characters\AI\EnemyState.cs" />
     <Compile Include="Characters\Skills.cs" />
     <Compile Include="Interfaces\IAnimation.cs" />
-    <Compile Include="Interfaces\IAttack.cs" />
+    <Compile Include="Interfaces\ISkills.cs" />
     <Compile Include="Interfaces\IDraw.cs" />
     <Compile Include="Interfaces\IMovabble.cs" />
     <Compile Include="Characters\MainCharacter.cs" />

@@ -24,48 +24,49 @@ namespace CrooksAndCastles
         private SpriteBatch spriteBatch;
         private Background background;
         private GameOver gameOver;
-        private KeyboardState keyBoard;
-        private List<Character> units = new List<Character>();
-        private bool startingCharacter = true;
-        private const float SpawnDistanceBetweenUnits = Enemy.EnemyChaseDistance + 10;
-        HealthBar healthBar = new HealthBar();
+        private bool startingCharacter;
+        private HealthBar healthBar;
         public const int WindowHeight = 576;
         public const int WindowWidth = 1024; 
         public const int MenuHeight = 50;
 
-        
-
         public CrooksAndCastles()
         {
+            startingCharacter = true;
+            healthBar = new HealthBar();
             Content.RootDirectory = "Content";
             this.graphics = new GraphicsDeviceManager(this);
             this.graphics.PreferredBackBufferHeight = WindowHeight;
             this.graphics.PreferredBackBufferWidth = WindowWidth;
+            Units = new List<Character>();
         }
         
         ////////// PROPERTIS //////////
+        internal static List<Character> Units { get; set; }
         public static MainCharacter Hero { get; set; }
+        internal static KeyboardState keyBoard { get; set; }
+        
 
         /////////// Internal GAME XNA METHODS ///////////
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
             base.Initialize();
             this.IsMouseVisible = true;
         }
         protected override void LoadContent()
         {
             this.spriteBatch = new SpriteBatch(GraphicsDevice);
-            Hero = new MainCharacter(Content, "CharacterBoyRight", 150f, 4, true);
-            units.Add(Hero);
+            Hero = new MainCharacter(Content, "HeroMoveLeft", "HeroMoveRight", "HeroHitLeft", "HeroHitRight", 150f, 4, true, 2, "HeroMoveDown", "HeroMoveUp");
+            Units.Add(Hero);
             this.background = new Background(Content, "BackgroundIMG", new Rectangle(0, MenuHeight, this.graphics.PreferredBackBufferWidth, this.graphics.PreferredBackBufferHeight));
             this.gameOver = new GameOver(Content, "GameOver", new Rectangle(0, 0, this.graphics.PreferredBackBufferWidth, this.graphics.PreferredBackBufferHeight));
-
+            while (Units.Count < 6)
+            {
+                Enemy enemy = SpawnEnemy();
+                Units.Add(enemy);
+            }
             //Control Handle XNA
             Control.FromHandle(Window.Handle).Controls.Add(healthBar.HealBar);
-            
-            //TODO ENEMY SPOWNS
-            units.Add(new Enemy(Content, "EnemyOneRight", 150f, 4, true, RandomCoordinates()));
         }
         protected override void UnloadContent()
         {
@@ -73,26 +74,35 @@ namespace CrooksAndCastles
         }
         protected override void Update(GameTime gameTime)
         {
-            this.keyBoard = Keyboard.GetState();
-            foreach (var unit in this.units)
-            {
-                if (unit is Enemy)
-                {
-                    Enemy enemy = unit as Enemy;
-                    enemy.playCharacterAnimation(gameTime);
-                    enemy.Awareness();
-                }
-            }
+            keyBoard = Keyboard.GetState();
+
             //Player Movement
             MovePlayer(gameTime);
             if (this.startingCharacter == true)
             {
-                Hero.ChangeAsset(Content, "CharacterBoyRight", 1);
+                Hero.ChangeAsset(Content, "HeroMoveDown", 1);
                 Hero.playCharacterAnimation(gameTime);
             }
 
+            if (Units.Count < 6)
+            {
+                Enemy enemy = SpawnEnemy();
+                Units.Add(enemy);
+            }
+
+            for (int index = 1; index < Units.Count; index++)
+            {
+                Units[index].playCharacterAnimation(gameTime);
+            }
+            for (int index = 0; index < Units.Count; index++)
+            {
+                Units[index].Awareness();
+            }
+            
+
             //health initialization and update
-            healthBar.ChangeSize(Hero.Health);
+            healthBar.HealBar.Maximum = Hero.Level * 1000;
+            healthBar.ChangeSize(Math.Max(Hero.Level*Hero.Health, 0));
 
             base.Update(gameTime);
         }
@@ -108,11 +118,11 @@ namespace CrooksAndCastles
             else
             {
                 this.background.Draw(spriteBatch);
-                Hero.Draw(spriteBatch);
-                for (int index = 1; index < units.Count; index++)
+                for (int index = 0; index < Units.Count; index++)
                 {
-                    units[index].Draw(this.spriteBatch);
+                    Units[index].Draw(this.spriteBatch);
                 }
+                Hero.Draw(spriteBatch);
             }
             
             this.spriteBatch.End();
@@ -125,42 +135,39 @@ namespace CrooksAndCastles
             if (keyBoard.IsKeyDown(Keys.Up))
             {
                 Hero.MoveUp();
-                Hero.ChangeAsset(Content, "CharacterBoyUp", 4);
-                Hero.playCharacterAnimation(gameTime);
+                Hero.ChangeAsset(Content, "HeroMoveUp", 4);
+                Units[0].playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
             else if (keyBoard.IsKeyDown(Keys.Right))
             {
                 Hero.MoveRight();
-                Hero.ChangeAsset(Content, "CharacterBoyRight", 4);
-                Hero.playCharacterAnimation(gameTime);
+                Hero.ChangeAsset(Content, "HeroMoveRight", 4);
+                Units[0].playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
             else if (keyBoard.IsKeyDown(Keys.Down))
             {
                 Hero.MoveDown();
-                Hero.ChangeAsset(Content, "CharacterBoyDown", 4);
-                Hero.playCharacterAnimation(gameTime);
+                Hero.ChangeAsset(Content, "HeroMoveDown", 4);
+                Units[0].playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
             else if (keyBoard.IsKeyDown(Keys.Left))
             {
                 Hero.MoveLeft();
-                Hero.ChangeAsset(Content, "CharacterBoyLeft", 4);
-                Hero.playCharacterAnimation(gameTime);
+                Hero.ChangeAsset(Content, "HeroMoveLeft", 4);
+                Units[0].playCharacterAnimation(gameTime);
                 this.startingCharacter = false;
             }
+            else if (keyBoard.IsKeyDown(Keys.Space))
+            {
+                Units[0].playCharacterAnimation(gameTime); 
+            }
         }
-        private void SpawnEnemy()
+        private Enemy SpawnEnemy()
         {
-           //TODO ENEMY SPOWN
-        }
-        private Vector2 RandomCoordinates()
-        {
-            Random rand = new Random();
-            float randomX = rand.Next(0, WindowWidth - MenuHeight);
-            float randomY = rand.Next(MenuHeight, WindowHeight - MenuHeight);
-            return new Vector2(randomX, randomY);
+            return new Enemy(Content, "EnemyOneLeft", "EnemyOneRight", "EnemyOneHitLeft", "EnemyOneHitRight", 150f, 4, true, Enemy.GetRandomPosition(), Hero.Level);
         }
     }
 }

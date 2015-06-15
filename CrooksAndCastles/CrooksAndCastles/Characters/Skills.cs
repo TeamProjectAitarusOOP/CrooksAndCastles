@@ -7,7 +7,11 @@ namespace CrooksAndCastles.Characters
 {
     internal class Skills
     {
-        public Skills()
+        private int level;
+        private int health;
+        private int damage;
+ 
+        public Skills(int level)
         {
             
         }
