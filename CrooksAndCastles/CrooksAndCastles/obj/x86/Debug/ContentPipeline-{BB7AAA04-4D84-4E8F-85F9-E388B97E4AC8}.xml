@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveDown.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveDown.xnb</Output>
       <Time>2015-06-14T16:12:30.3025086+03:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveLeft.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveLeft.xnb</Output>
       <Time>2015-06-14T16:12:30.3338012+03:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveRight.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveRight.xnb</Output>
       <Time>2015-06-14T16:12:30.3494008+03:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveUp.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroMoveUp.xnb</Output>
       <Time>2015-06-14T16:12:30.4900087+03:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\BackgroundIMG.xnb</Output>
       <Time>2015-06-14T16:12:30.4743827+03:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\GameOver.xnb</Output>
       <Time>2015-06-14T17:35:46.6962602+03:00</Time>
     </Item>
     <Item>
@@ -61,16 +61,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitLeft.xnb</Output>
-      <Time>2015-06-15T14:35:02.6497871+03:00</Time>
-    </Item>
-    <Item>
-      <Source>EnemyOneHitRight.png</Source>
-      <Name>EnemyOneHitRight</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitRight.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitLeft.xnb</Output>
       <Time>2015-06-15T14:35:02.6497871+03:00</Time>
     </Item>
     <Item>
@@ -79,7 +70,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneLeft.xnb</Output>
       <Time>2015-06-15T14:34:56.821562+03:00</Time>
     </Item>
     <Item>
@@ -88,17 +79,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneRight.xnb</Output>
       <Time>2015-06-15T14:34:56.8371108+03:00</Time>
     </Item>
     <Item>
-      <Source>HeroHitRight.png</Source>
-      <Name>HeroHitRight</Name>
+      <Source>EnemyOneHitRight.png</Source>
+      <Name>EnemyOneHitRight</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitRight.xnb</Output>
-      <Time>2015-06-15T15:03:59.4807163+03:00</Time>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\EnemyOneHitRight.xnb</Output>
+      <Time>2015-06-15T14:35:02.6497871+03:00</Time>
     </Item>
     <Item>
       <Source>HeroHitLeft.png</Source>
@@ -106,8 +97,17 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitLeft.xnb</Output>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitLeft.xnb</Output>
       <Time>2015-06-15T15:02:30.1401374+03:00</Time>
+    </Item>
+    <Item>
+      <Source>HeroHitRight.png</Source>
+      <Name>HeroHitRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitRight.xnb</Output>
+      <Time>2015-06-15T15:03:59.4807163+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -116,10 +116,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastlesContent\</RootDirectory>
-      <LoggerRootDirectory>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\GitHub\temp\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastlesContent\</RootDirectory>
+      <LoggerRootDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

@@ -5,8 +5,8 @@ Content\HeroMoveUp.xnb
 Content\BackgroundIMG.xnb
 Content\GameOver.xnb
 Content\EnemyOneHitLeft.xnb
-Content\EnemyOneHitRight.xnb
 Content\EnemyOneLeft.xnb
 Content\EnemyOneRight.xnb
-Content\HeroHitRight.xnb
+Content\EnemyOneHitRight.xnb
 Content\HeroHitLeft.xnb
+Content\HeroHitRight.xnb
