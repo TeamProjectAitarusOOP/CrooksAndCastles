@@ -17,9 +17,7 @@ namespace CrooksAndCastles.BackgroundObjects.HealthBar
             this.HealBar.Size = new System.Drawing.Size(199, 22);
             this.HealBar.TabIndex = 4;
         }
-
         public ProgressBar HealBar { get; set; }
-
         public void ChangeSize(int health)
         {
             this.HealBar.Value = health;

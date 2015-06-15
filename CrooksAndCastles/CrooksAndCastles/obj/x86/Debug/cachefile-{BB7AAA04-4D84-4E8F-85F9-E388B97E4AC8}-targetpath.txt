@@ -10,3 +10,4 @@ Content\EnemyOneRight.xnb
 Content\EnemyOneHitRight.xnb
 Content\HeroHitLeft.xnb
 Content\HeroHitRight.xnb
+Content\SleepingNPC.xnb

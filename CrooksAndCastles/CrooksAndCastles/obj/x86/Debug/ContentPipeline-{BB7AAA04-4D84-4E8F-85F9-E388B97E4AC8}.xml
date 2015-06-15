@@ -109,6 +109,15 @@
       <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\HeroHitRight.xnb</Output>
       <Time>2015-06-15T15:03:59.4807163+03:00</Time>
     </Item>
+    <Item>
+      <Source>SleepingNPC.png</Source>
+      <Name>SleepingNPC</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\GitHub\CrooksAndCastles OOP\trunk\CrooksAndCastles\CrooksAndCastles\bin\x86\Debug\Content\SleepingNPC.xnb</Output>
+      <Time>2015-06-15T19:08:18.3588506+03:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{BB7AAA04-4D84-4E8F-85F9-E388B97E4AC8}</ContentProjectGUID>
