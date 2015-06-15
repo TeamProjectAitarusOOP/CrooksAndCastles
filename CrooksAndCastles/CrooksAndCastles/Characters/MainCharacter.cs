@@ -5,6 +5,7 @@ using System.Text;
 using CrooksAndCastles.Interfaces;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -14,13 +15,13 @@ namespace CrooksAndCastles.Characters
     {
         private readonly string AssetMoveUp;
         private readonly string AssetMoveDown;
+        private const int baseDamage = 20;
 
         public MainCharacter(ContentManager content, string assetMoveLeft, string assetMoveRight, string assetHitLeft, string assetHitRight, float frameSpeed, int numberOfFrames, bool looping, int level, string assetMoveDown, string assetMoveUp)
             : base(content, assetMoveLeft, assetMoveRight, assetHitLeft, assetHitRight, frameSpeed, numberOfFrames, looping, level)
         {
             this.Position = new Vector2(CrooksAndCastles.WindowWidth / 2, CrooksAndCastles.WindowHeight / 2);
-            this.Health = 1000;
-            this.Damage = 30;
+            this.Damage = baseDamage * level;
             this.IsAlive = true;
             this.AssetMoveUp = assetMoveUp;
             this.AssetMoveDown = assetMoveDown;
@@ -86,7 +87,6 @@ namespace CrooksAndCastles.Characters
                 this.Position = new Vector2(x, y);  
             }
         }
-
         public override void Draw(SpriteBatch spriteBatch)
         {
             if (IsAlive)
@@ -94,7 +94,6 @@ namespace CrooksAndCastles.Characters
                 base.Draw(spriteBatch);
             }
         }
-
         public override void Awareness()
         {
             for (int index = 1; index < CrooksAndCastles.Units.Count; index++)
@@ -114,7 +113,6 @@ namespace CrooksAndCastles.Characters
                 }
             }
         }
-
         protected void Attack(int index)
         {
             Enemy enemy = (Enemy)CrooksAndCastles.Units[index];

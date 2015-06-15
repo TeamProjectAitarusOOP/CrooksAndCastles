@@ -12,7 +12,7 @@ namespace CrooksAndCastles.BackgroundObjects.HealthBar
         {
             this.HealBar = new ProgressBar();
             this.HealBar.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.HealBar.Location = new System.Drawing.Point(10, 12);
+            this.HealBar.Location = new System.Drawing.Point(10, 20);
             this.HealBar.MarqueeAnimationSpeed = 1;
             this.HealBar.Size = new System.Drawing.Size(199, 22);
             this.HealBar.TabIndex = 4;
